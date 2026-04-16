@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estacionamento Rotativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🅿️ Estacionamento Rotativo</h1>
+            <p>Autocar- 2 horas máximo</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3>💰 Caixa Total</h3>
+                <p id="caixaTotal">R$ 0,00</p>
+            </div>
+            <div class="stat-card">
+                <h3>🚗 Vagas Livres</h3>
+                <p id="vagasLivres">10</p>
+            </div>
+            <div class="stat-card">
+                <h3>📊 Total Veículos</h3>
+                <p id="totalVeiculos">0</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <h2>📝 Registrar Entrada</h2>
+            <div class="form-group">
+                <input type="text" id="placaInput" placeholder="Digite a placa (ex: ABC1234)" maxlength="8">
+                <button id="btnEntrada" class="btn btn-success">✅ Registrar Entrada</button>
+            </div>
+        </div>
+
+        <div class="actions">
+            <h2>🚪 Registrar Saída</h2>
+            <div class="form-group">
+                <input type="text" id="placaSaidaInput" placeholder="Digite a placa para saída">
+                <button id="btnSaida" class="btn btn-danger">🚗 Registrar Saída</button>
+            </div>
+        </div>
+
+        <div class="mapa-container">
+            <h2>🗺️ Mapa do Estacionamento</h2>
+            <div id="mapaVagas" class="mapa-vagas"></div>
+        </div>
+
+        <div class="historico-container">
+            <h2>📜 Histórico de Movimentações</h2>
+            <button id="btnBackup" class="btn btn-info">💾 Salvar Backup</button>
+            <button id="btnLimparHistorico" class="btn btn-warning">🗑️ Limpar Histórico</button>
+            <div id="historicoLista" class="historico-lista"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
