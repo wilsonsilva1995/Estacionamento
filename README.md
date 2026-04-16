@@ -31,7 +31,7 @@ Solução: Sistema que controla tempo máximo (2h) e aplica multas automáticas 
 ## 📊 Regras de Negócio
 - Tempo máximo: 2 horas
 - Multa por hora excedida: R$ 5,00
-- Capacidade: 10 vagas
+- Capacidade: 10 Vagas
 
 
 ## 🧠 LÓGICA DE NEGÓCIO (REGRA DE OURO)
